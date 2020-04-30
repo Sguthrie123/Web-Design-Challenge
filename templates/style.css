@@ -1,0 +1,64 @@
+#bottom {
+    background-color: grey;
+    padding: 10px
+    }
+
+.figure{
+    height: 300px;
+    width: 272px;
+
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+    max-height: max-content;    
+}
+
+.test{
+    float: inline-start;
+}
+
+.container{
+    max-width: max-content;
+    min-width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large{
+    font-size: large;
+}
+
+.nav{
+    color: cadetblue;
+    
+}
+
+.figs{
+    width: 350px ;
+    height: 350px
+}
+@media(max-width:600px)  {
+
+    
+    .navbar-collapse.collapse {
+        display: none !important;
+        visibility: hidden;
+    }
+
+
+}
+@media (max-width: 600px) {
+
+
+    .figure{
+        width: 250px;
+        height: 200px;
+        float: left;
+      }
+    
+  }
+  

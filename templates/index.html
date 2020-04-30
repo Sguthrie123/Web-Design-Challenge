@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Landing Page</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/style.css">
+
+    </head>
+
+    <body>
+        
+      <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <a class="navbar-brand" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/index.html">Latitude X</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active">
+              <a class="nav-link" href="/Users/shawn/Documents/GitHub/Web-Design-Challenge/table.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/comparison.html">Comparisons</a>
+            </li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/windspeed.html">Wind Speed</a>
+                  <a class="dropdown-item" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/cloudiness.html">Cloudiness</a>
+            </div>
+            <a class="btn btn-outline-primary" href="https://www.github.com/sguthrie123">GitHub</a>
+
+          </ul>
+        </div>
+      </nav>
+          
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <img src="https://columbia.bootcampcontent.com/columbia-bootcamp/CU-NYC-DATA-PT-02-2020-U-C/raw/master/11-Web/homework/assignment/Resources/assets/images/Fig1.png" height= 400px width= 500px" class="mr-3" alt="fig1" style="background-color: azure;">
+                        <div class="media-body" style="background-color: azure; text-align: center;">
+                          <h2 class="mt-0" >Latitude X</h2> <br>
+                          The purpose of this project was to analyze the weather and how it changes due to the latitude of your coordinates. I specfically chose the range latitude of Europe because that is where I wanted to go on vacation before the quarantine happened.
+                          To do this we had to use the OpenWeatherMap API to pull data of those cities near the latitude we chose. <br>
+                          We then uses MatPlotLib to plot various aspects of the data we recieved from the API. Some factors we looked at were the temperature, cloudiness, wind speed, humidity. If you look at the comparisons, you will see all the visualization of the data we found.                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="jumbotron">
+            <h1 class="display-4" style="text-align: center;">Visualizations</h1>
+            <p class="lead" style="text-align: center;">Here are just the graphs alone. If you click the button below it will take you to the data we used to graph. If you wish to see each 
+            graph with more detail please click the plot drop down in the top right and click on the specfic one you would like to see in more detail 
+            </p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="file:///Users/shawn/Documents/GitHub/Web-Design-Challenge/templates/comparison.html" role="button" style="display: flex; align-items: center; justify-content: center;">Learn more</a>
+          </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class ="figure" src="https://columbia.bootcampcontent.com/columbia-bootcamp/CU-NYC-DATA-PT-02-2020-U-C/raw/master/11-Web/homework/assignment/Resources/assets/images/Fig1.png" >
+                    <img class ="figure" src="https://columbia.bootcampcontent.com/columbia-bootcamp/CU-NYC-DATA-PT-02-2020-U-C/raw/master/11-Web/homework/assignment/Resources/assets/images/Fig2.png" >
+                    <img class ="figure" src="https://columbia.bootcampcontent.com/columbia-bootcamp/CU-NYC-DATA-PT-02-2020-U-C/raw/master/11-Web/homework/assignment/Resources/assets/images/Fig3.png" >
+                    <img class ="figure" src="https://columbia.bootcampcontent.com/columbia-bootcamp/CU-NYC-DATA-PT-02-2020-U-C/raw/master/11-Web/homework/assignment/Resources/assets/images/Fig4.png" >
+
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
+        <div id="bottom">
+            <p class="center"> @ I Don't have Copyright 2020 </p>
+        </div>
+      </body>
+</html>
